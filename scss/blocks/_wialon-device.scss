@@ -1,0 +1,28 @@
+
+.wialon-devices_wrapper{
+    margin: 120px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+}
+.wialon-devices_block{
+    max-width: 360px;
+    margin-right: 60px;
+.wialon-devices_description{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    span{
+        display: inline-block;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        padding-top: 35px;
+        padding-bottom: 5px;
+    }
+}
+
+}

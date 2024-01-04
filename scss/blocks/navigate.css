@@ -1,0 +1,54 @@
+#menu {
+  position: relative;
+  font-family: Graphik;
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu__links {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu__link {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.menu__link:first-child {
+  padding-left: 20px;
+}
+.menu__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid red;
+}
+.menu__button > button {
+  color: #0071E3;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border: 1px solid #0071E3;
+}
+.menu__button_demo {
+  width: 155px;
+  background-color: white;
+}
+.menu__button_order {
+  width: 106px;
+  margin-left: 8px;
+}/*# sourceMappingURL=navigate.css.map */
