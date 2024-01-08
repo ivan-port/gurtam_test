@@ -148,11 +148,9 @@ nav {
   margin-top: 64px;
 }
 
-$assetsPath: "../../img";
-
 .about-wialon_image {
   height: 535px;
-  background-image: url(#{$assetsPath}/image1.png);
+  background-image: url(../../img/image1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
