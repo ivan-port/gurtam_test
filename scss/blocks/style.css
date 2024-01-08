@@ -148,7 +148,7 @@ nav {
   margin-top: 64px;
 }
 
-$assetPath: "../../img"
+$assetsPath: "../../img"
 
 .about-wialon_image {
   height: 535px;
