@@ -265,13 +265,13 @@ nav {
   justify-content: space-between;
 }
 .wialon-raiting_object {
-  max-width: 257px;
+  max-width: 200px;
   color: rgba(0, 0, 0, 0.64);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
-  margin-right: 5px;
+  margin-right: 12px;
 }
 .wialon-raiting_object:last-child {
   margin-right: 0px;
@@ -292,6 +292,7 @@ nav {
 .wialon-work_wrapper {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .wialon-work_text {
   width: 576px;
@@ -690,6 +691,7 @@ nav {
     justify-content: flex-start;
     align-items: center;
     padding: 0px;
+    width: 20px;
   }
   .menu__link {
     font-size: 16px;
@@ -873,7 +875,6 @@ nav {
     grid-template-columns: 120px 120px;
     grid-template-rows: 100px 250px 200px 140px;
     row-gap: 5px;
-    overflow: hidden;
   }
   .wialon-work_image {
     overflow: hidden;
@@ -943,6 +944,9 @@ nav {
   .hamburger.active {
     left: 220px;
   }
+  .menu__links {
+    width: 100px;
+  }
   .menu__links:after {
     content: "";
     left: 30px;
@@ -952,10 +956,68 @@ nav {
     position: absolute;
     width: 220px;
   }
+  .wialon-raiting_wrapper {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .wialon-raiting_object {
+    max-width: 180px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .wialon-raiting_object span {
+    font-size: 38px;
+  }
+}
+@media (max-width: 500px) {
+  .task-wialon_images {
+    max-height: 280px;
+  }
+  .about-wialon_title {
+    max-width: 385px;
+    font-size: 48px;
+  }
+  .about-wialon_description {
+    max-width: 400px;
+  }
+  .wialon-map_input__wraper {
+    top: 200px; /*опускаем поле ввода ниже*/
+  }
+  .wialon-map_input__wraper .wialon-map_input {
+    width: 105px;
+    height: 52px;
+  }
+  .wialon-raiting_object {
+    max-width: 180px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .wialon-raiting_object span {
+    font-size: 38px;
+  }
+  .wialon-raiting_wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .wialon-work_title {
+    color: #242424;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+  }
+  .wialon-work_description {
+    margin-top: 24px;
+    font-size: 21x;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+  }
 }
 .container {
   position: relative;
-  min-width: 477px;
+  min-width: 400px;
   max-width: 1520px;
   margin: 0 auto;
   padding: 0px 15px;

@@ -37,6 +37,7 @@
             justify-content: flex-start;
             align-items: center;
             padding: 0px;
+            width: 20px;
         }
         &__link{
             font-size: 16px;
@@ -238,7 +239,8 @@
         grid-template-columns: 120px 120px ;
         grid-template-rows: 100px 250px 200px 140px;
         row-gap: 5px;
-        overflow: hidden;
+
+
     }
     .wialon-work_image{
         overflow: hidden;
@@ -299,6 +301,7 @@
     .task-wialon_images{
         max-height: 350px;
     }
+
 }
 
 @media(max-width:613px){
@@ -310,8 +313,9 @@
     .hamburger.active{
         left: 220px;
     }
-    .menu{
+    .menu{ 
         &__links{
+            width: 100px;
             &:after{
                 content:'';
                 left:30px;
@@ -322,7 +326,75 @@
                 width: 220px;
             } 
         }
-     }
+     
+
+    }
+    .wialon-raiting{
+        &_wrapper{
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        &_object{
+            max-width: 180px;
+            font-size: 18px;
+            font-weight: 400;
+                span{
+                font-size: 38px;
+            }
+        }
 
 }
+}
 
+@media(max-width:500px){
+    .task-wialon_images{
+        max-height: 280px;
+    }
+    .about-wialon_title{
+        max-width: 385px;
+        font-size: 48px;
+    }
+    .about-wialon_description{
+        max-width: 400px;
+    }
+    .wialon-map_input__wraper{
+        top: 200px;/*опускаем поле ввода ниже*/
+        .wialon-map_input{
+            width: 105px;
+            height: 52px;
+        }
+    }
+    .wialon-raiting{
+        &_object{
+            max-width: 180px;
+            font-size: 18px;
+            font-weight: 400;
+                span{
+                font-size: 38px;
+            }
+        }
+        &_wrapper{
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+    }
+    .wialon-work{
+        &_title{
+            color: #242424;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 52px;
+        }
+        &_description{
+            margin-top: 24px;
+            font-size: 21x;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px; /* 150% */
+        }
+    }
+
+}
