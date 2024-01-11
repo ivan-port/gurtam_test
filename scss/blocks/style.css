@@ -150,7 +150,7 @@ nav {
 
 .about-wialon_image {
   height: 535px;
-  background-image: url(../../img/image1.png);
+  background-image: url(/img/image1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -729,7 +729,6 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0px;
     height: 350px;
     width: 250px;
     background-color: #FFFFFF;
@@ -772,6 +771,7 @@ nav {
   .menu__links.active {
     transition: all 0.5s;
     left: 0;
+    margin-right: 190px; /**/
   }
   .hamburger {
     position: absolute;
