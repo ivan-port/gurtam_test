@@ -169,6 +169,14 @@
     .task-wialon_images{
         max-height: 500px;
     }
+    .task-wialon_buttons{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        
+
+    }
     .about-wialon_title{
         max-width: 750px;
         font-size: 48px;
@@ -362,6 +370,8 @@
         .wialon-map_input{
             width: 105px;
             height: 52px;
+            padding-left: 25px;
+
         }
     }
     .wialon-raiting{

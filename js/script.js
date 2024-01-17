@@ -433,6 +433,17 @@ window.addEventListener('resize',function () {
   }
 });
 
+/**Полоса прокрутки для кнопок task-wialon*/
+let taskButtons=document.querySelector('.task-wialon_buttons');/**наш объект с кнопками */
+/**taskButton -все наши кнопки*/
+taskButton.forEach(function(element){
+  element.addEventListener("click", function(){
+    let c = element.getBoundingClientRect(),/*положение элемента относительно видимой части viewport, функции включает и другие значения */
+    scroll_bar = taskButtons.scrollLeft + c.left-15;/*15 поправочный коэф., так как имеем отступы по краям */
+    console.log(taskButtons.scrollLeft);/*текущее положение прокрутки */
+    taskButtons.scrollLeft=scroll_bar;
+  })
+});
 
 
 

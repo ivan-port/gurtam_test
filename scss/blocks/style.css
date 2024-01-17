@@ -212,7 +212,8 @@ nav {
   gap: 20px;
 }
 .task-wialon_buttons .task-wialon_button {
-  width: 228px;
+  min-width: 228px;
+  max-width: 228px;
   height: 56px;
   padding: 12px 16px;
   text-align: start;
@@ -807,6 +808,12 @@ nav {
   .task-wialon_images {
     max-height: 500px;
   }
+  .task-wialon_buttons {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
   .about-wialon_title {
     max-width: 750px;
     font-size: 48px;
@@ -986,6 +993,7 @@ nav {
   .wialon-map_input__wraper .wialon-map_input {
     width: 105px;
     height: 52px;
+    padding-left: 25px;
   }
   .wialon-raiting_object {
     max-width: 180px;
