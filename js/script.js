@@ -416,10 +416,25 @@ function focusInput(x){
 /**Hamburger*/
 let hamburger=document.querySelector('.hamburger')
 let menushka=document.querySelector('.menu__links')
+
 hamburger.addEventListener('click',function(event){
   hamburger.classList.toggle('active');
   menushka.classList.toggle('active');
 })
+
+let link=document.querySelectorAll('.menu__link')
+link.forEach(function(element){
+  element.addEventListener('click',()=>{
+    hamburger.classList.remove('active');
+    menushka.classList.remove('active');
+  })
+})
+
+
+
+
+
+
 
 /**меняем placeholder input после разрешения в 768px */
 window.addEventListener('resize',function () {

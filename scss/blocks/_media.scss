@@ -174,8 +174,7 @@
         flex-wrap: nowrap;
         overflow: scroll;
         scroll-behavior: smooth;
-        
-
+        height: 70px;
     }
     .about-wialon_title{
         max-width: 750px;
@@ -247,8 +246,6 @@
         grid-template-columns: 120px 120px ;
         grid-template-rows: 100px 250px 200px 140px;
         row-gap: 5px;
-
-
     }
     .wialon-work_image{
         overflow: hidden;

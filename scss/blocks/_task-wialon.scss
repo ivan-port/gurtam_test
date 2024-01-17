@@ -48,22 +48,15 @@
             position: absolute;
             object-fit: cover;
             top: 0px;
-            left: 10000px;
+            left: 5000px;
             margin: 0 auto;
             width: 100%;
-            transition: all 1.1s;
+            transition: all 1s;
             &.active{
-                transition: all 1.1s;
+                transition: all 0.5s;
                 top: 0px;
                 left: 0px;
             }
-            &.timeLeft{
-                transition: all 1.1s;
-                left: -10000px;
-
-            }
         }
-
     }
-
 }
