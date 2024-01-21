@@ -165,6 +165,7 @@ nav {
   line-height: 60px;
   font-style: normal;
   font-weight: 700;
+  -webkit-text-stroke: 0.2px #FFF;
 }
 
 .about-wialon_description {
@@ -730,7 +731,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 350px;
-    width: 250px;
+    min-width: 100px; /**для плавного показа меню и отъездом кнопок*/
+    margin-right: 0px;
     background-color: #FFFFFF;
     box-shadow: 7px 5px 5px rgba(0, 0, 255, 0.3);
     position: relative;
@@ -742,7 +744,7 @@ nav {
     background: url("https://wialon.com/resource/new-design/mobile-icon-wialon.svg") no-repeat;
     width: 40px;
     height: 40px;
-    top: 18px;
+    top: 20px;
     left: 40px;
   }
   .menu__links:before {
@@ -751,7 +753,7 @@ nav {
     width: 250px;
     height: 2px;
     background-color: rgba(0, 0, 255, 0.3);
-    top: 55px;
+    top: 65px;
     left: 0px;
   }
   .menu__link {
@@ -761,6 +763,7 @@ nav {
   .menu__link:first-child {
     padding-left: 30px;
     width: auto;
+    margin-top: 5px;
   }
   .menu__link > a {
     display: block;
@@ -769,9 +772,10 @@ nav {
     padding-top: 8px;
   }
   .menu__links.active {
-    transition: all 0.5s;
     left: 0;
-    margin-right: 190px; /**/
+    margin-right: 50px; /**/
+    min-width: 250px;
+    transition: all 0.5s;
   }
   .hamburger {
     position: absolute;
@@ -788,7 +792,7 @@ nav {
   }
   .hamburger.active {
     position: absolute;
-    top: 17px;
+    top: 20px;
     left: 260px;
     transition: left 0.5s;
   }
@@ -943,26 +947,6 @@ nav {
   }
 }
 @media (max-width: 613px) {
-  .menu__links.active {
-    transition: all 0.5s;
-    left: 0;
-    width: 220px;
-  }
-  .hamburger.active {
-    left: 220px;
-  }
-  .menu__links {
-    width: 100px;
-  }
-  .menu__links:after {
-    content: "";
-    left: 30px;
-  }
-  .menu__links:before {
-    content: "";
-    position: absolute;
-    width: 220px;
-  }
   .wialon-raiting_wrapper {
     flex-wrap: wrap;
     row-gap: 20px;
@@ -974,6 +958,12 @@ nav {
   }
   .wialon-raiting_object span {
     font-size: 38px;
+  }
+  .menu__links.active {
+    left: 0;
+    margin-right: 650px; /**/
+    min-width: 250px;
+    transition: all 0.5s;
   }
 }
 @media (max-width: 500px) {
@@ -1039,4 +1029,5 @@ nav {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 65px;
 }/*# sourceMappingURL=style.css.map */

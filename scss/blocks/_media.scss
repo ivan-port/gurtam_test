@@ -84,17 +84,19 @@
             justify-content: space-around;
             align-items: center;
             height: 350px;
-            width: 250px;
+            min-width: 100px;/**для плавного показа меню и отъездом кнопок*/
+            margin-right: 0px;
             background-color: #FFFFFF;
             box-shadow:7px 5px 5px rgba(0, 0, 255, .3);
-                position: relative;                
+                position: relative;       
+                transition: all 0.5s;           
                 &:after{
                     content:'';
                     position: absolute;
                     background: url('https://wialon.com/resource/new-design/mobile-icon-wialon.svg') no-repeat;
                     width: 40px;
                     height: 40px;
-                    top:18px;
+                    top:20px;
                     left:40px;
                 }
                 &:before{
@@ -103,10 +105,10 @@
                     width: 250px;
                     height: 2px;
                     background-color:rgba(0, 0, 255, .3);
-                    top: 55px;
+                    top: 65px;
                     left: 0px;
                 } 
-                transition: all 0.5s;  
+                
         }
             &__link{
                 font-size: 18px;
@@ -114,21 +116,21 @@
                 &:first-child{
                     padding-left: 30px;
                     width: auto;
+                    margin-top: 5px;
                 }
                 &>a{
                     display: block;
                     width: 200px;
                     height: 30px;
-                    padding-top: 8px;
-                    
+                    padding-top: 8px;  
                 }
             } 
-
     }
     .menu__links.active{
-        transition: all 0.5s;
         left: 0;
-        margin-right: 190px;/**/
+        margin-right: 50px;/**/
+        min-width: 250px;
+        transition: all 0.5s;
     }
     .hamburger{
         position: absolute;
@@ -145,7 +147,7 @@
     }
     .hamburger.active{
         position: absolute;
-        top:17px;
+        top:20px;
         left: 260px;
         span:nth-child(2){
             visibility: hidden;
@@ -307,33 +309,10 @@
         max-height: 350px;
     }
 
+
 }
 
 @media(max-width:613px){
-    .menu__links.active{
-        transition: all 0.5s;
-        left: 0;
-        width: 220px;
-    }
-    .hamburger.active{
-        left: 220px;
-    }
-    .menu{ 
-        &__links{
-            width: 100px;
-            &:after{
-                content:'';
-                left:30px;
-            }
-            &:before{
-                content: '';
-                position: absolute;
-                width: 220px;
-            } 
-        }
-     
-
-    }
     .wialon-raiting{
         &_wrapper{
             flex-wrap: wrap;
@@ -347,8 +326,13 @@
                 font-size: 38px;
             }
         }
-
-}
+    }
+    .menu__links.active{
+        left: 0;
+        margin-right: 650px;/**/
+        min-width: 250px;
+        transition: all 0.5s;
+    }
 }
 
 @media(max-width:500px){
@@ -403,5 +387,4 @@
             line-height: 36px; /* 150% */
         }
     }
-
 }

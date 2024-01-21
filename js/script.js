@@ -430,12 +430,6 @@ link.forEach(function(element){
   })
 })
 
-
-
-
-
-
-
 /**меняем placeholder input после разрешения в 768px */
 window.addEventListener('resize',function () {
   if(innerWidth <= 768){
