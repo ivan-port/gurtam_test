@@ -257,12 +257,10 @@ document.addEventListener('DOMContentLoaded',function(){
       element.addEventListener('submit',  async function formSend(e){     /**отправка формы */
       e.preventDefault();                                              /**запрещаем стандартную отправку формы */
       let error=formValidate(element);                                    /**переменная error для подсчета ошибок, не обязательная */
-
       function formValidate(form){
           let error=0;
           let formReq=element.querySelectorAll('._req');                    /**Находим все инпуты(_req) на конкретной форме, которые необходимо проверить */
           console.log(formReq)
-  
           for (let index = 0; index < formReq.length; index++) {          /**перебираем все инпуты через цикл */
               const input = formReq[index];
               formRemoveError(input);                                     /**удаляем клacс с ошибкой  */                
@@ -273,13 +271,13 @@ document.addEventListener('DOMContentLoaded',function(){
                       error++;
                   }
               }   
-                  else {
-                          if (input.value=='') {                              /**Проверяем на пустое поле.Проверка на номер телефона сделано через jQuery в верху кода*/                    
-                          formAddError(input);
-                          error++;  
-                          }
-                          else{formRemoveError(input); }
+              else {
+                      if (input.value=='') {                              /**Проверяем на пустое поле.Проверка на номер телефона сделано через jQuery в верху кода*/                    
+                      formAddError(input);
+                      error++;  
                       }
+                      else{formRemoveError(input); }
+                  }
           }
           return error; 
       }
@@ -293,7 +291,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
       if(error===0){
             element.classList.add('_sending');/**картинка с загрузкой */
-          let response=await fetch('smart.php',{
+          let response=await fetch('../smart.php',{
               method:'POST',
               body:formData
           });
