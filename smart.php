@@ -55,7 +55,7 @@ $mail->CharSet = 'utf-8';
 
     /**Обработчик отправки */
     if(!$mail->send()) {/**если форма не отправилась */
-        $message='Ошибка';
+        $message='Ошибка 22';
         return false;
     } else {
         $message='Данные отправлены!';

@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
       if(error===0){
             element.classList.add('_sending');/**картинка с загрузкой */
-          let response=await fetch('../smart.php',{
+          let response=await fetch('smart.php',{
               method:'POST',
               body:formData
           });
