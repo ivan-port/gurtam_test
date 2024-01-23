@@ -7,9 +7,9 @@ use PHPMailer\PHPMailer\Exception;
 
 
 
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
-require 'phpmailer/src/Exception.php';
+require 'https://github.com/ivan-port/gurtam_test/blob/05cc911ce4b5d22f170c9e2779d7cbdf9530414d/phpmailer/src/PHPMailer.php';
+require 'https://github.com/ivan-port/gurtam_test/blob/05cc911ce4b5d22f170c9e2779d7cbdf9530414d/phpmailer/src/SMTP.php';
+require 'https://github.com/ivan-port/gurtam_test/blob/05cc911ce4b5d22f170c9e2779d7cbdf9530414d/phpmailer/src/Exception.php';
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
