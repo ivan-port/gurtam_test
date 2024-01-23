@@ -293,7 +293,8 @@ document.addEventListener('DOMContentLoaded',function(){
             element.classList.add('_sending');/**картинка с загрузкой */
           let response=await fetch('https://github.com/ivan-port/gurtam_test/smart.php',{
               method:'POST',
-              body:formData
+              body:formData,
+              mode: "no-cors"
           });
               if(response.ok){
                 element.classList.remove('_sending');
